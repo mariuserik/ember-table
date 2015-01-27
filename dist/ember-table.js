@@ -292,6 +292,7 @@ Ember.AddeparMixins.ResizeHandlerMixin = Ember.Mixin.create({
     return this._setupDocumentHandlers();
   },
   willDestroyElement: function() {
+    Ember.run.cancel(this.endResize);
     this._removeDocumentHandlers();
     return this._super();
   },
