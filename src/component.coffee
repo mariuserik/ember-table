@@ -98,6 +98,10 @@ Ember.AddeparMixins.ResizeHandlerMixin,
   # Internal properties
   # ---------------------------------------------------------------------------
 
+  # Special flag used by child views to look up this component using
+  # nearestWithProperty()
+  isEmberTable: yes
+
   columnsFillTable: yes
 
   init: ->
